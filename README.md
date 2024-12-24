@@ -1,7 +1,7 @@
 ## README.md
 
 ````markdown
-# Laravel React Authentication System
+# Laravel React(Inertia) Authentication System
 
 ## 概要
 
