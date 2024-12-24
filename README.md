@@ -5,7 +5,7 @@
 
 ## 概要
 
-このプロジェクトは、Laravel 11 と React（TypeScript）を使用した、高度な認証システムを実装した Web アプリケーションです。
+このプロジェクトは、Laravel 11 と React（TypeScript）を使用し、パッケージを使用せず認証システムを実装した Web アプリケーションです。
 Docker（Laravel Sail）環境で動作し、2 段階認証やロールベースのアクセス制御を含む包括的な認証機能を提供します。
 
 ## 技術スタック
@@ -57,6 +57,8 @@ cp .env.example .env
 3. Docker コンテナの起動
 
 ```bash
+composer require laravel/sail --dev
+php artisan sail:install
 ./vendor/bin/sail up -d
 ```
 
@@ -175,14 +177,3 @@ rm -rf node_modules
 npm clean-install
 ```
 
-## ライセンス
-
-[MIT License](LICENSE)
-
-## コントリビューション
-
-1. このリポジトリをフォーク
-2. 機能ブランチを作成 (`git checkout -b feature/amazing-feature`)
-3. 変更をコミット (`git commit -m 'Add some amazing feature'`)
-4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
-5. プルリクエストを作成
